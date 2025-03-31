@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "health-monitor",
+      "exec_mode": "fork",
+      "instances": "1",
+      "script": "/srv/nodes/health-monitor/dist/main.js",
+      "autorestart": true,
+      "listen_timeout": 15000,
+      "env": {
+        "ENV": "production"
+      }
+    }
+  ]
+}

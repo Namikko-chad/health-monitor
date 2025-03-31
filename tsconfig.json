@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "baseUrl": "src",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "lib": ["ES2022"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": false,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "strict": true,
+    "target": "ES2022",
+    "types": ["node"],
+    "inlineSources": true,
+    "paths": {
+      "@app/*": ["app/*"],
+      "@common/*": ["common/*"],
+      "@libs/*": ["libs/*"]
+    },
+    // Set `sourceRoot` to  "/" to strip the build path prefix
+    // from generated source code references.
+    // This improves issue grouping in Sentry.
+    "sourceRoot": "/"
+  },
+  "include": ["./src/**/*.ts", "./prisma/**/*.ts"]
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "./src/**/*.ts",
+    "./prisma/**/*.ts",
+    "commitlint.config.cjs",
+    "jest.config.cjs",
+    ".eslintrc.js",
+    ".prettierrc"
+  ],
+  "exclude": ["node_modules", "build"]
+}
